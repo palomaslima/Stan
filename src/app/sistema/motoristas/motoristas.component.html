@@ -1,0 +1,82 @@
+<app-header-sistema></app-header-sistema>
+<div class="container motoristas">
+    <div id="accordion">
+
+        <div class="card">
+            <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                    <img src="../../../assets/img/add-usuario.png"> Motorista
+                </a>
+            </div>
+            <div id="collapseOne" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <form>
+                        <div class="row">
+                            <div class="form-group col-md-3">
+                                <label for="id">ID:</label>
+                                <input type="text" class="form-control" id="id" aria-describedby="id">
+                            </div>
+                            <div class="form-group col-md-9">
+                                <label for="cpf">CPF:</label>
+                                <input type="email" class="form-control" id="cpf" aria-describedby="cpf">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Senha">
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="telefone">Telefone:</label>
+                                <input type="tel" class="form-control" id="telefone" aria-describedby="id">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="celular">Celular:</label>
+                                <input type="tel" class="form-control" id="celular" aria-describedby="cpf">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="endereco">Endereço:</label>
+                            <input type="text" class="form-control" id="endereco">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-5">
+                                <label for="cnh">CNH:</label>
+                                <input type="text" class="form-control" id="cnh" aria-describedby="cnh">
+                            </div>
+                            <div class="form-group col-md-7">
+                                <div class="form-group form-check">
+                                    <label>Sexo:</label>
+                                    <div class="row">
+
+                                        <div class="col-md-2">
+                                            <input class="form-check-input" type="radio" name="feminino" id="feminino"
+                                                value="feminino" checked>
+                                            <label class="form-check-label" for="feminino">
+                                                Feminino
+                                            </label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input class="form-check-input" type="radio" name="masculino" id="masculino"
+                                                value="masculino">
+                                            <label class="form-check-label" for="masculino">
+                                                Masculino
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-salvar">Salvar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

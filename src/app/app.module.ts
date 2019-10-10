@@ -17,6 +17,12 @@ import { JwtInterceptor, ErrorInterceptor } from '../app/sistema/_helpers';
 // used to create fake backend
 import { fakeBackendProvider } from '../app/sistema/_helpers';
 import { SobreComponent } from './site/sobre/sobre.component';
+import { IndexSistemaComponent } from './sistema/index-sistema/index-sistema.component';
+import { MenuComponent } from './sistema/menu/menu.component';
+import { UsuariosComponent } from './sistema/usuarios/usuarios.component';
+import { HeaderSistemaComponent } from './sistema/header-sistema/header-sistema.component';
+import { MotoristasComponent } from './sistema/motoristas/motoristas.component';
+
 
 
 
@@ -30,11 +36,16 @@ import { SobreComponent } from './site/sobre/sobre.component';
     ContatoComponent,
     FooterComponent,
     LoginComponent,
-    SobreComponent
+    SobreComponent,
+    IndexSistemaComponent,
+    MenuComponent,
+    UsuariosComponent,
+    HeaderSistemaComponent,
+    MotoristasComponent
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule,
+    // ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
   ],
