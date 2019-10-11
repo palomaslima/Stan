@@ -10,150 +10,218 @@
             </div>
             <div id="collapseOne" class="collapse" data-parent="#accordion">
                 <div class="card-body">
-                    <form>
-                        <div class="row">
-                            <div class="form-group col-md-3">
-                                <label for="id">ID:</label>
-                                <input type="text" class="form-control" id="id" aria-describedby="id">
-                            </div>
-                            <div class="form-group col-md-9">
-                                <label for="cpf">CPF:</label>
-                                <input type="email" class="form-control" id="cpf" aria-describedby="cpf">
-                            </div>
+                    <nav class="menu-opcoes">
+                        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-form-tab" data-toggle="tab" href="#nav-form"
+                                role="tab" aria-controls="nav-form" aria-selected="true">Novo Funcionario</a>
+                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-dados"
+                                role="tab" aria-controls="nav-dados" aria-selected="false">Dados do Funcionario</a>
+                            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-relatorio"
+                                role="tab" aria-controls="nav-relatorio" aria-selected="false">Relatório</a>
                         </div>
-                        <div class="form-group">
-                            <label for="nome">Nome Completo</label>
-                            <input type="text" class="form-control" id="nome" placeholder="Senha">
-                        </div>
-                        <div class="row">
-                            <div class="form-group col-md-6">
-                                <label for="telefone">Telefone:</label>
-                                <input type="tel" class="form-control" id="telefone" aria-describedby="id">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="celular">Celular:</label>
-                                <input type="tel" class="form-control" id="celular" aria-describedby="cpf">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="endereco">Endereço:</label>
-                            <input type="text" class="form-control" id="endereco">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email">
-                        </div>
-                        <div class="row">
-                            <div class="form-group col-md-5">
-                                <label for="empresa">Empresa:</label>
-                                <input type="text" class="form-control" id="empresa" aria-describedby="id">
-                            </div>
-                            <div class="form-group col-md-7">
-                                <label>Cargo:</label>
-                                <select class="custom-select">
-                                    <option selected>Cargo</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group form-check">
-                            <label>Sexo:</label>
-                            <div class="row">
-
-                                <div class="col-md-2">
-                                    <input class="form-check-input" type="radio" name="feminino" id="feminino"
-                                        value="feminino" checked>
-                                    <label class="form-check-label" for="feminino">
-                                        Feminino
-                                    </label>
+                    </nav>
+                    <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-form" role="tabpanel"
+                            aria-labelledby="nav-home-tab">
+                            <form>
+                                <div class="row">
+                                    <div class="form-group col-md-3">
+                                        <label for="id">ID:</label>
+                                        <input type="text" class="form-control" id="id" aria-describedby="id">
+                                    </div>
+                                    <div class="form-group col-md-9">
+                                        <label for="cpf">CPF:</label>
+                                        <input type="email" class="form-control" id="cpf" aria-describedby="cpf">
+                                    </div>
                                 </div>
-                                <div class="col-md-2">
-                                    <input class="form-check-input" type="radio" name="masculino" id="masculino"
-                                        value="masculino">
-                                    <label class="form-check-label" for="masculino">
-                                        Masculino
-                                    </label>
+                                <div class="form-group">
+                                    <label for="nome">Nome Completo</label>
+                                    <input type="text" class="form-control" id="nome" placeholder="Senha">
                                 </div>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-salvar">Salvar</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-header">
-                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                    <img src="../../../assets/img/add-usuario.png"> Cliente
-                </a>
-            </div>
-            <div id="collapseTwo" class="collapse" data-parent="#accordion">
-                <div class="card-body">
-                    <form>
-                        <div class="row">
-                            <div class="col-md-5">
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label for="telefone">Telefone:</label>
+                                        <input type="tel" class="form-control" id="telefone" aria-describedby="id">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="celular">Celular:</label>
+                                        <input type="tel" class="form-control" id="celular" aria-describedby="cpf">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="endereco">Endereço:</label>
+                                    <input type="text" class="form-control" id="endereco">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-5">
+                                        <label for="empresa">Empresa:</label>
+                                        <input type="text" class="form-control" id="empresa" aria-describedby="id">
+                                    </div>
+                                    <div class="form-group col-md-7">
+                                        <label>Cargo:</label>
+                                        <select class="custom-select">
+                                            <option selected>Cargo</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
                                 <div class="form-group form-check">
-                                    <label>Tipo Pessoa:</label>
+                                    <label>Sexo:</label>
                                     <div class="row">
 
-                                        <div class="col-md-6">
-                                            <input class="form-check-input" type="radio" name="fisica" id="fisica"
-                                                value="fisica" checked>
-                                            <label class="form-check-label" for="fisica">
-                                                Fisica
+                                        <div class="col-md-2">
+                                            <input class="form-check-input" type="radio" name="feminino" id="feminino"
+                                                value="feminino" checked>
+                                            <label class="form-check-label" for="feminino">
+                                                Feminino
                                             </label>
                                         </div>
-                                        <div class="col-md-6">
-                                            <input class="form-check-input" type="radio" name="juridica" id="juridica"
-                                                value="juridica">
-                                            <label class="form-check-label" for="juridica">
-                                                Juridica
+                                        <div class="col-md-2">
+                                            <input class="form-check-input" type="radio" name="masculino" id="masculino"
+                                                value="masculino">
+                                            <label class="form-check-label" for="masculino">
+                                                Masculino
                                             </label>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-7">
-                                <div class="form-group">
-                                    <label for="cnpj">CPF/CNPJ</label>
-                                    <input type="text" class="form-control" id="cnpj">
-                                </div>
-                            </div>
+                                <button type="submit" class="btn btn-primary btn-salvar">Salvar</button>
+                            </form>
                         </div>
-                        <div class="form-group">
-                            <label for="nome">Nome Completo</label>
-                            <input type="text" class="form-control" id="nome" placeholder="Senha">
+                        <div class="tab-pane fade" id="nav-dados" role="tabpanel" aria-labelledby="nav-dados-tab">
+                            Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat
+                            qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam
+                            sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure
+                            incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do
+                            nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit.
+                            Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore.
+                            Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
                         </div>
-                        <div class="form-group">
-                            <label for="endereco">Endereço:</label>
-                            <input type="text" class="form-control" id="endereco">
+                        <div class="tab-pane fade" id="nav-relatorio" role="tabpanel"
+                            aria-labelledby="nav-relatorio-tab">
+                            Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat
+                            qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam
+                            sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure
+                            incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do
+                            nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit.
+                            Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore.
+                            Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
                         </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email">
-                        </div>
-
-
-                        <div class="row">
-                            <div class="form-group col-md-6">
-                                <label for="telefone">Telefone:</label>
-                                <input type="tel" class="form-control" id="telefone" aria-describedby="id">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="celular">Celular:</label>
-                                <input type="tel" class="form-control" id="celular" aria-describedby="cpf">
-                            </div>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary btn-salvar">Salvar</button>
-                    </form>
+                    </div>
                 </div>
             </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                        <img src="../../../assets/img/add-usuario.png"> Cliente
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <nav class="menu-opcoes">
+                            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-form-tab" data-toggle="tab"
+                                    href="#nav-form2" role="tab" aria-controls="nav-form" aria-selected="true">Novo
+                                    Cliente</a>
+                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-dados2"
+                                    role="tab" aria-controls="nav-dados" aria-selected="false">Dados do Cliente</a>
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab"
+                                    href="#nav-relatorio2" role="tab" aria-controls="nav-relatorio"
+                                    aria-selected="false">Relatório</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-form2" role="tabpanel"
+                                aria-labelledby="nav-home-tab">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="form-group form-check">
+                                                <label>Tipo Pessoa:</label>
+                                                <div class="row">
+
+                                                    <div class="col-md-6">
+                                                        <input class="form-check-input" type="radio" name="fisica"
+                                                            id="fisica" value="fisica" checked>
+                                                        <label class="form-check-label" for="fisica">
+                                                            Fisica
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <input class="form-check-input" type="radio" name="juridica"
+                                                            id="juridica" value="juridica">
+                                                        <label class="form-check-label" for="juridica">
+                                                            Juridica
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="form-group">
+                                                <label for="cnpj">CPF/CNPJ</label>
+                                                <input type="text" class="form-control" id="cnpj">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="nome">Nome Completo</label>
+                                        <input type="text" class="form-control" id="nome" placeholder="Senha">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="endereco">Endereço:</label>
+                                        <input type="text" class="form-control" id="endereco">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" id="email">
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="telefone">Telefone:</label>
+                                            <input type="tel" class="form-control" id="telefone" aria-describedby="id">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="celular">Celular:</label>
+                                            <input type="tel" class="form-control" id="celular" aria-describedby="cpf">
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary btn-salvar">Salvar</button>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="nav-dados2" role="tabpanel" aria-labelledby="nav-dados-tab">
+                                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat
+                                qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam
+                                sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure
+                                incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do
+                                nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit.
+                                Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore.
+                                Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                            </div>
+                            <div class="tab-pane fade" id="nav-relatorio2" role="tabpanel"
+                                aria-labelledby="nav-relatorio-tab">
+                                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat
+                                qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam
+                                sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure
+                                incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do
+                                nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit.
+                                Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore.
+                                Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
-
-
-    </div>
-</div>

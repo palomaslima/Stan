@@ -22,6 +22,9 @@ import { MenuComponent } from './sistema/menu/menu.component';
 import { UsuariosComponent } from './sistema/usuarios/usuarios.component';
 import { HeaderSistemaComponent } from './sistema/header-sistema/header-sistema.component';
 import { MotoristasComponent } from './sistema/motoristas/motoristas.component';
+import { VeiculosComponent } from './sistema/veiculos/veiculos.component';
+import { AbastecimentoComponent } from './sistema/abastecimento/abastecimento.component';
+import { ReservaComponent } from './sistema/reserva/reserva.component';
 
 
 
@@ -41,7 +44,10 @@ import { MotoristasComponent } from './sistema/motoristas/motoristas.component';
     MenuComponent,
     UsuariosComponent,
     HeaderSistemaComponent,
-    MotoristasComponent
+    MotoristasComponent,
+    VeiculosComponent,
+    AbastecimentoComponent,
+    ReservaComponent
   ],
   imports: [
     BrowserModule,
