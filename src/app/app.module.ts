@@ -26,6 +26,8 @@ import { VeiculosComponent } from './sistema/veiculos/veiculos.component';
 import { AbastecimentoComponent } from './sistema/abastecimento/abastecimento.component';
 import { ReservaComponent } from './sistema/reserva/reserva.component';
 import { ManutencaoComponent } from './sistema/manutencao/manutencao.component';
+import { PneusComponent } from './sistema/pneus/pneus.component';
+import { ViagemComponent } from './sistema/viagem/viagem.component';
 
 
 
@@ -49,7 +51,9 @@ import { ManutencaoComponent } from './sistema/manutencao/manutencao.component';
     VeiculosComponent,
     AbastecimentoComponent,
     ReservaComponent,
-    ManutencaoComponent
+    ManutencaoComponent,
+    PneusComponent,
+    ViagemComponent
   ],
   imports: [
     BrowserModule,

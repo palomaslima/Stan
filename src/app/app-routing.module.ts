@@ -9,6 +9,7 @@ import { VeiculosComponent } from './sistema/veiculos/veiculos.component';
 import { AbastecimentoComponent } from './sistema/abastecimento/abastecimento.component';
 import { ReservaComponent } from './sistema/reserva/reserva.component';
 import { ManutencaoComponent } from './sistema/manutencao/manutencao.component';
+import { PneusComponent } from './sistema/pneus/pneus.component';
 
 
 const routes: Routes = [
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path: 'admin/veiculos', component: VeiculosComponent},
   {path: 'admin/abastecimento', component: AbastecimentoComponent},
   {path: 'admin/reservas', component: ReservaComponent},
-  {path: 'admin/manutencao', component: ManutencaoComponent}
+  {path: 'admin/manutencao', component: ManutencaoComponent},
+  {path: 'admin/pneus', component: PneusComponent}
 ];
 
 @NgModule({

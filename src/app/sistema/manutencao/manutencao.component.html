@@ -1,10 +1,10 @@
 <app-header-sistema></app-header-sistema>
-<div class="container reserva">
+<div class="container manutencao">
     <div id="accordion">
         <div class="card">
             <div class="card-header">
                 <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                    <img src="../../../assets/img/abastecimento.png"> Manutenção
+                    <img src="../../../assets/img/manutencao.png"> Manutenção
                 </a>
             </div>
             <div id="collapseOne" class="collapse" data-parent="#accordion">
@@ -16,13 +16,13 @@
                                     <a class="nav-item nav-link active" id="nav-form-tab" data-toggle="tab"
                                         href="#nav-form" role="tab" aria-controls="nav-form"
                                         aria-selected="true">Cadastrar
-                                        Reserva</a>
+                                        Manutenção</a>
                                     <!-- <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
                                         href="#nav-dados" role="tab" aria-controls="nav-dados"
                                         aria-selected="false">Dados do Abastecimento</a> -->
-                                    <!-- <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab"
+                                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab"
                                         href="#nav-relatorio" role="tab" aria-controls="nav-relatorio"
-                                        aria-selected="false">Relatório</a> -->
+                                        aria-selected="false">Relatório</a>
                                 </div>
                             </nav>
                             <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
@@ -31,30 +31,107 @@
                                     <form id="form">
                                         <div class="row">
                                             <div class="form-group col-md-2">
-                                                <label for="id">ID:</label>
+                                                <label for="id">Código:</label>
                                                 <input type="text" class="form-control" id="id" aria-describedby="id">
                                             </div>
                                             <div class="form-group col-md-5">
-                                                <label for="data-retirada">Data da retirada:</label>
-                                                <input type="date" class="form-control" id="data-retirada" aria-describedby="id">
+                                                <label for="data-retirada">Plano de manutençaõ:</label>
+                                                <select class="custom-select">
+                                                    <option selected>Plano</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
                                             </div>
                                             <div class="form-group col-md-5">
-                                                    <label for="data-entrega">Data de entrega:</label>
-                                                    <input type="date" class="form-control" id="data-entrega" aria-describedby="id">
+                                                <label for="data-entrega">Plano periódico:</label>
+                                                <select class="custom-select">
+                                                    <option selected>Plano</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
                                             </div>
 
                                         </div>
-                            
-                                        <div class="form-group">
-                                            <label for="motorista">Motorista:</label>
-                                            <input class="form-control" id="motorista">
+
+                                        <div class="row">
+                                            <div class="form-group col-md-3">
+                                                <label for="data-entrega">Funcionário responsável:</label>
+                                                <select class="custom-select">
+                                                    <option selected>Funcionário</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group col-md-3">
+                                                <label for="motorista">Veículo:</label>
+                                                <input class="form-control" id="veículo">
+                                            </div>
+
+                                            <div class="form-group col-md-3">
+                                                <label for="data-inicio">Data de início:</label>
+                                                <input class="form-control" type="date" id="data-inicio">
+                                            </div>
+
+                                            <div class="form-group col-md-3">
+                                                <label for="data-final">Data final:</label>
+                                                <input class="form-control" type="date" id="data-final">
+                                            </div>
                                         </div>
+
+
+                                        <div class="row">
+                                            <div class="form-group col-md-4">
+                                                <label for="motorista">Motorista:</label>
+                                                <input class="form-control" id="motorista">
+                                            </div>
+
+                                            <div class="form-group col-md-4">
+                                                <label for="peca-trocada">Peça a ser trocada:</label>
+                                                <select class="custom-select">
+                                                    <option selected>Peça</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group col-md-4">
+                                                <label for="tipo-manutencao">Tipo de manutenção:</label>
+                                                <select class="custom-select">
+                                                    <option selected>Tipo</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Descrição</label>
+                                            <textarea class="form-control" id="descricao"></textarea>
+                                        </div>
+
 
 
                                         <button type="submit" class="btn btn-primary btn-salvar">Salvar</button>
                                     </form>
                                 </div>
-                                
+
+                                <div class="tab-pane fade" id="nav-relatorio" role="tabpanel"
+                                    aria-labelledby="nav-relatorio-tab">
+                                    Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat
+                                    qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam
+                                    sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure
+                                    incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do
+                                    nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit.
+                                    Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore.
+                                    Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                                </div>
+
                             </div>
 
                         </div>
