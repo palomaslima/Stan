@@ -25,6 +25,7 @@ import { MotoristasComponent } from './sistema/motoristas/motoristas.component';
 import { VeiculosComponent } from './sistema/veiculos/veiculos.component';
 import { AbastecimentoComponent } from './sistema/abastecimento/abastecimento.component';
 import { ReservaComponent } from './sistema/reserva/reserva.component';
+import { ManutencaoComponent } from './sistema/manutencao/manutencao.component';
 
 
 
@@ -47,7 +48,8 @@ import { ReservaComponent } from './sistema/reserva/reserva.component';
     MotoristasComponent,
     VeiculosComponent,
     AbastecimentoComponent,
-    ReservaComponent
+    ReservaComponent,
+    ManutencaoComponent
   ],
   imports: [
     BrowserModule,
