@@ -10,6 +10,7 @@ import { AbastecimentoComponent } from './sistema/abastecimento/abastecimento.co
 import { ReservaComponent } from './sistema/reserva/reserva.component';
 import { ManutencaoComponent } from './sistema/manutencao/manutencao.component';
 import { PneusComponent } from './sistema/pneus/pneus.component';
+import { ViagemComponent } from './sistema/viagem/viagem.component';
 
 
 const routes: Routes = [
@@ -21,7 +22,8 @@ const routes: Routes = [
   {path: 'admin/abastecimento', component: AbastecimentoComponent},
   {path: 'admin/reservas', component: ReservaComponent},
   {path: 'admin/manutencao', component: ManutencaoComponent},
-  {path: 'admin/pneus', component: PneusComponent}
+  {path: 'admin/pneus', component: PneusComponent},
+  {path: 'admin/viagem', component: ViagemComponent}
 ];
 
 @NgModule({
