@@ -1,5 +1,4 @@
-import { MultasComponent } from './sistema/multas/multas.component';
-import { QuilometragemComponent } from './sistema/quilometragem/quilometragem.component';
+
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './site/home/home.component';
@@ -13,6 +12,8 @@ import { ReservaComponent } from './sistema/reserva/reserva.component';
 import { ManutencaoComponent } from './sistema/manutencao/manutencao.component';
 import { PneusComponent } from './sistema/pneus/pneus.component';
 import { ViagemComponent } from './sistema/viagem/viagem.component';
+import { QuilometragemComponent } from './sistema/quilometragem/quilometragem.component';
+import { MultasComponent } from './sistema/multas/multas.component';
 
 
 
