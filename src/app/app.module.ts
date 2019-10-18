@@ -28,6 +28,7 @@ import { ReservaComponent } from './sistema/reserva/reserva.component';
 import { ManutencaoComponent } from './sistema/manutencao/manutencao.component';
 import { PneusComponent } from './sistema/pneus/pneus.component';
 import { ViagemComponent } from './sistema/viagem/viagem.component';
+import { QuilometragemComponent } from './sistema/quilometragem/quilometragem.component';
 
 
 
@@ -53,7 +54,8 @@ import { ViagemComponent } from './sistema/viagem/viagem.component';
     ReservaComponent,
     ManutencaoComponent,
     PneusComponent,
-    ViagemComponent
+    ViagemComponent,
+    QuilometragemComponent
   ],
   imports: [
     BrowserModule,
