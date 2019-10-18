@@ -27,7 +27,7 @@ const routes: Routes = [
   {path: 'admin/manutencao', component: ManutencaoComponent},
   {path: 'admin/pneus', component: PneusComponent},
   {path: 'admin/viagem', component: ViagemComponent},
-  {path: 'admin/quilometragem', component: QuilometragemComponent}
+  {path: 'admin/quilometragem', component: QuilometragemComponent},
   {path: 'admin/multas', component: MultasComponent}
 ];
 
