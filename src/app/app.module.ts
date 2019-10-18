@@ -29,7 +29,7 @@ import { ManutencaoComponent } from './sistema/manutencao/manutencao.component';
 import { PneusComponent } from './sistema/pneus/pneus.component';
 import { ViagemComponent } from './sistema/viagem/viagem.component';
 import { QuilometragemComponent } from './sistema/quilometragem/quilometragem.component';
-import { MultasComponent } from './multas/multas.component';
+import { MultasComponent } from './sistema/multas/multas.component';
 
 
 
