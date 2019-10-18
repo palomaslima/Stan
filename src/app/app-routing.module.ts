@@ -1,3 +1,4 @@
+import { QuilometragemComponent } from './sistema/quilometragem/quilometragem.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './site/home/home.component';
@@ -13,6 +14,7 @@ import { PneusComponent } from './sistema/pneus/pneus.component';
 import { ViagemComponent } from './sistema/viagem/viagem.component';
 
 
+
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'admin', component: IndexSistemaComponent},
@@ -23,7 +25,8 @@ const routes: Routes = [
   {path: 'admin/reservas', component: ReservaComponent},
   {path: 'admin/manutencao', component: ManutencaoComponent},
   {path: 'admin/pneus', component: PneusComponent},
-  {path: 'admin/viagem', component: ViagemComponent}
+  {path: 'admin/viagem', component: ViagemComponent},
+  {path: 'admin/quilometragem', component: QuilometragemComponent}
 ];
 
 @NgModule({
