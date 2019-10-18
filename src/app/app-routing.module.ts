@@ -1,3 +1,4 @@
+import { MultasComponent } from './sistema/multas/multas.component';
 import { QuilometragemComponent } from './sistema/quilometragem/quilometragem.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -27,6 +28,7 @@ const routes: Routes = [
   {path: 'admin/pneus', component: PneusComponent},
   {path: 'admin/viagem', component: ViagemComponent},
   {path: 'admin/quilometragem', component: QuilometragemComponent}
+  {path: 'admin/multas', component: MultasComponent}
 ];
 
 @NgModule({
