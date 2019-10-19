@@ -4,9 +4,13 @@ Author: Carol Freitas
 Create Date: 18/10/2019
 Description: Responsável por mostrar dados da tela de multas.
 -->
+<!--
+  Author: Caroline de Freitas
+  Update: Atualizado dia 19/10/2019
+-->
 
 <app-header-sistema></app-header-sistema>
-<div class="container multas">
+<div class="container multas"> <!--Inicio do container multas-->
   <div id="accordion">
     <div class="card">
       <div class="card-header">
@@ -17,13 +21,13 @@ Description: Responsável por mostrar dados da tela de multas.
       <div id="collapseOne" class="collapse" data-parent="#accordion">
         <div class="card-body">
           <div class="row">
-              <div class="col-md-12">
-                <nav class="menu-opcoes">
-                  <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link active" id="nav-form-tab" data-toggle="tab"  href="#nav-form" role="tab" aria-controls="nav-form" aria-selected="true">Dados da Infração</a>
-                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-relatorio" role="tab" aria-controls="nav-relatorio" aria-selected="false">Relatório</a>
-                  </div>
-                </nav>
+            <div class="col-md-12">
+              <nav class="menu-opcoes">
+                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active" id="nav-form-tab" data-toggle="tab"  href="#nav-form" role="tab" aria-controls="nav-form" aria-selected="true">Dados da Infração</a>
+                  <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-relatorio" role="tab" aria-controls="nav-relatorio" aria-selected="false">Relatório</a>
+                </div>
+              </nav>
               <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-form" role="tabpanel" aria-labelledby="nav-home-tab">
                   <form id="form">
@@ -61,13 +65,21 @@ Description: Responsável por mostrar dados da tela de multas.
                         <input type="number" class="form-control" id="gravidade" aria-describedby="id">
                       </div>
                     </div>
-
-                    <div>
+                    <div class="row">
+                      <div class="form-group col-md-6">
+                        <label for="descricao-multa">Descrição da Multa:</label>
+                        <textarea class="form-control" id="descricao-multa" aria-describedby="id"></textarea>
+                      </div>
+                    </div>
+                    <div >
                       <h2>Informações do Veículo</h2>
+                    <div class="row">
                       <div class="form-group col-md-6">
                         <label for="veiculo">Veículo:</label>
                         <input type="text" class="form-control" id="veiculo" aria-describedby="id">
                       </div>
+                    </div>
+                    <div class="row">
                       <div class="form-group col-md-6">
                         <label for="marca">Marca:</label>
                         <select class="custom-select">
@@ -79,6 +91,8 @@ Description: Responsável por mostrar dados da tela de multas.
                           <option value="5">Honda</option>
                         </select>
                       </div>
+                    </div>
+                    <div class="row">
                       <div class="form-group col-md-6">
                         <label for="modelo">Modelo:</label>
                         <select class="custom-select">
@@ -90,8 +104,10 @@ Description: Responsável por mostrar dados da tela de multas.
                           <option value="5">Siena</option>
                         </select>
                       </div>
+                    </div>
+                    <div class="row">
                       <div class="form-group col-md-6">
-                          <label for="categoria">Categoria:</label>
+                        <label for="categoria">Categoria:</label>
                         <select class="custom-select">
                           <option selected>Categoria</option>
                           <option value="1">Utilitários esportivos‎ (171 P)</option>
@@ -101,6 +117,8 @@ Description: Responsável por mostrar dados da tela de multas.
                           <option value="5">Minicarro‎ (17 P)</option>
                         </select>
                       </div>
+                    </div>
+                    <div class="row">
                       <div class="form-group col-md-6">
                         <label for="cor">Cor:</label>
                         <select class="custom-select">
@@ -110,9 +128,11 @@ Description: Responsável por mostrar dados da tela de multas.
                           <option value="3">Branco</option>
                         </select>
                       </div>
+                    </div>
+                    <div class="row">
                       <div class="form-group col-md-6">
                         <label for="tipo-veiculo">Tipo do Veículo:</label>
-                        <select class="custom-select">
+                          <select class="custom-select">
                           <option selected>Tipo de Veículo</option>
                           <option value="1">Carro de luxo</option>
                           <option value="2">Veículo utilitário esportivo</option>
@@ -120,23 +140,7 @@ Description: Responsável por mostrar dados da tela de multas.
                         </select>
                       </div>
                     </div>
-
-                    <div class="row">
-                      <div class="form-group col-md-6">
-                        <label for="descricao-multa">Descrição da Multa:</label>
-                        <textarea class="form-control" id="descricao-multa" aria-describedby="id"></textarea>
-                      </div>
                     </div>
-                    <!--<div class="row">
-                    </div>-->
-                    <!--<div class="row">
-                    </div>-->
-                    <!--<div class="row">
-                    </div>-->
-                    <!--<div class="row">
-                    </div>-->
-                    <!--<div class="row">
-                    </div>-->
                     <button type="submit" class="btn btn-primary btn-salvar">Salvar</button>
                   </form>
                 </div>
@@ -150,4 +154,4 @@ Description: Responsável por mostrar dados da tela de multas.
       </div>
     </div>
   </div>
-</div>
+</div> <!--Final do container multas-->
