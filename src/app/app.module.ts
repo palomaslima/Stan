@@ -30,6 +30,8 @@ import { PneusComponent } from './sistema/pneus/pneus.component';
 import { ViagemComponent } from './sistema/viagem/viagem.component';
 import { QuilometragemComponent } from './sistema/quilometragem/quilometragem.component';
 import { MultasComponent } from './sistema/multas/multas.component';
+import { SinistrosComponent } from './sistema/sinistros/sinistros.component';
+import { EstoqueComponent } from './sistema/estoque/estoque.component';
 
 
 
@@ -57,7 +59,9 @@ import { MultasComponent } from './sistema/multas/multas.component';
     PneusComponent,
     ViagemComponent,
     QuilometragemComponent,
-    MultasComponent
+    MultasComponent,
+    SinistrosComponent,
+    EstoqueComponent
   ],
   imports: [
     BrowserModule,

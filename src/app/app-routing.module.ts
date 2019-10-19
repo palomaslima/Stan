@@ -14,6 +14,7 @@ import { PneusComponent } from './sistema/pneus/pneus.component';
 import { ViagemComponent } from './sistema/viagem/viagem.component';
 import { QuilometragemComponent } from './sistema/quilometragem/quilometragem.component';
 import { MultasComponent } from './sistema/multas/multas.component';
+import { SinistrosComponent } from './sistema/sinistros/sinistros.component';
 
 
 
@@ -29,7 +30,8 @@ const routes: Routes = [
   {path: 'admin/pneus', component: PneusComponent},
   {path: 'admin/viagem', component: ViagemComponent},
   {path: 'admin/quilometragem', component: QuilometragemComponent},
-  {path: 'admin/multas', component: MultasComponent}
+  {path: 'admin/multas', component: MultasComponent},
+  {path: 'admin/sinistros', component: SinistrosComponent}
 ];
 
 @NgModule({
