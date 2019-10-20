@@ -10,4 +10,5 @@ export class UserService {
     getAll() {
         return this.http.get<User[]>(`${config.apiUrl}/users`);
     }
+// tslint:disable-next-line:eofline
 }
