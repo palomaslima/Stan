@@ -19,6 +19,7 @@ import { EstoqueComponent } from './sistema/estoque/estoque.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
+  {path: 'login', component: LoginComponent},
   {path: 'admin', component: IndexSistemaComponent},
   {path: 'admin/usuarios', component: UsuariosComponent},
   {path: 'admin/motoristas', component: MotoristasComponent},
