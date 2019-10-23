@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: avantgarde;
+    src: url('../src/assets/fontes/avantgarde-4.ttf');
+}
 
 *{font-family: Arial, Helvetica, sans-serif}
 *{
@@ -6,6 +10,7 @@
     --cordois: #FFF;
     --cortres: #50C2FD;
 }
+h1, h3{font-family: avantgarde, Arial, Helvetica, sans-serif;}
 .btn-salvar{background: var(--cortres); border: none; margin-bottom: 2%;}
 
 .card-header, .card-body{background: #fff; border: 1px solid var(--corum)}
