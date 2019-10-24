@@ -10,7 +10,7 @@ import { ContatoComponent } from './site/contato/contato.component';
 import { FooterComponent } from './site/footer/footer.component';
 import { LoginComponent } from './sistema/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { JwtInterceptor, ErrorInterceptor } from '../app/sistema/_helpers';
 
@@ -65,9 +65,10 @@ import { EstoqueComponent } from './sistema/estoque/estoque.component';
   ],
   imports: [
     BrowserModule,
-    // ReactiveFormsModule,
+    ReactiveFormsModule,
+    FormsModule,
     AppRoutingModule,
-    HttpClientModule,
+    HttpClientModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },

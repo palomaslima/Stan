@@ -12,19 +12,16 @@ import { AuthenticationService } from '../_services';
   })
 
 export class LoginComponent implements OnInit {
-    loading = false;
-    submitted = false;
-    returnUrl: string;
-    error = '';
 
-    constructor(
-        private route: ActivatedRoute,
-        private router: Router,
-        private authenticationService: AuthenticationService
-    ) { }
+    loginForm:FormGroup;
+
+    constructor(private formBuilder: FormBuilder) { }
 
     ngOnInit() {
-
+        this.loginForm = this.formBuilder.group({
+            usuarioLogin:this.formBuilder.control('', [Validators.required]),
+            passwordLogin:this.formBuilder.control('', [Validators.required])
+          })
     }
 
     
