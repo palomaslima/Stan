@@ -14,4 +14,10 @@ export class VeiculosComponent implements OnInit {
   ngOnInit() {
   }
 
+ abrirCollapse(){
+  document.getElementById("collapseTwo").className = "collapsed";
+
+  
+ }
+
 }
