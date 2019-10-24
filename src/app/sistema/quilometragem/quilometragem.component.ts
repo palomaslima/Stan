@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-quilometragem',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./quilometragem.component.scss']
 })
 export class QuilometragemComponent implements OnInit {
-
+  quilometragemForm:FormGroup;
   constructor() { }
 
   ngOnInit() {

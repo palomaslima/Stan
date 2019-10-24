@@ -24,19 +24,19 @@
           </nav>
           <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-form" role="tabpanel" aria-labelledby="nav-home-tab">
-              <form id="form">
+              <form [formGroup]="veiculosForm" id="form">
                 <div class="row">
                   <div class="form-group col-md-2">
                     <label for="id">ID:</label>
-                    <input type="text" class="form-control" id="id" aria-describedby="id">
+                    <input [(ngModel)]="id" type="text" class="form-control" id="id" aria-describedby="id">
                   </div>
                   <div class="form-group col-md-5">
                     <label for="chassi">Número do Chassi:</label>
-                    <input type="text" class="form-control" id="chassi" aria-describedby="cpf">
+                    <input [(ngModel)]="chassi" type="text" class="form-control" id="chassi" aria-describedby="cpf">
                   </div>
                   <div class="form-group col-md-5">
                     <label for="placa">Número da Placa:</label>
-                    <input type="text" class="form-control" id="placa" aria-describedby="cpf">
+                    <input [(ngModel)]="placa" type="text" class="form-control" id="placa" aria-describedby="cpf">
                   </div>
                 </div>
                 <div class="row">
@@ -69,11 +69,12 @@
                 <div class="row">
                   <div class="form-group col-md-4">
                     <label for="ano-fab">Ano Fabricação:</label>
-                    <input type="date" class="form-control" id="ano-fab" aria-describedby="id">
+                    <input [(ngModel)]="ano-fab" type="date" class="form-control" id="ano-fab" aria-describedby="id">
                   </div>
                   <div class="form-group col-md-4">
                     <label for="ano-model">Ano Modelo:</label>
-                    <input type="date" class="form-control" id="ano-model" aria-describedby="cpf">
+                    <input [(ngModel)]="ano-model" type="date" class="form-control" id="ano-model"
+                      aria-describedby="cpf">
                   </div>
                   <div class="form-group col-md-4">
                     <label for="placa">Categoria:</label>
@@ -106,16 +107,18 @@
                   </div>
                   <div class="form-group col-md-3">
                     <label for="quil-inicial">Quilometragem Inicial:</label>
-                    <input type="text" class="form-control" id="quil-inicial" aria-describedby="id">
+                    <input [(ngModel)]="quil-inicial" type="text" class="form-control" id="quil-inicial"
+                      aria-describedby="id">
                   </div>
                   <div class="form-group col-md-3">
                     <label for="quil-final">Quilometragem Final:</label>
-                    <input type="text" class="form-control" id="quil-final" aria-describedby="cpf">
+                    <input [(ngModel)]="quil-final" type="text" class="form-control" id="quil-final"
+                      aria-describedby="cpf">
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="obs">Observação:</label>
-                  <textarea class="form-control" id="obs"></textarea>
+                  <textarea [(ngModel)]="obs" class="form-control" id="obs"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary btn-salvar">Salvar</button>
               </form>
@@ -145,13 +148,13 @@
 
     <div class="card">
       <div class="card-header">
-        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo" >
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
           <img src="../../../assets/img/carros.png"> Alterar dados do Veículo
         </a>
         <!--Modal botão de pesquisa-->
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-        Pesquisar Veículo
-      </button>
+          Pesquisar Veículo
+        </button>
         <!-- Modal -->
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
           aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -164,7 +167,10 @@
                 </button>
               </div>
               <div class="modal-body">
-                <input type="text" class="form-control" id="placa" placeholder="Informe a Placa" />
+                <form [formGroup]="veiculosAlterarForm">
+                  <input [(ngModel)]="placaPesquisar" type="text" class="form-control" id="placaPesquisar"
+                    placeholder="Informe a Placa" />
+                </form>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
@@ -188,19 +194,19 @@
           <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
             <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
               <div class="tab-pane fade show active" id="nav-form" role="tabpanel" aria-labelledby="nav-home-tab">
-                <form id="form">
+                <form [formGroup]="veiculosAlterarForm" id="form">
                   <div class="row">
                     <div class="form-group col-md-2">
                       <label for="id">ID:</label>
-                      <input type="text" class="form-control" id="id" aria-describedby="id">
+                      <input [(ngModel)]="id" type="text" class="form-control" id="id" aria-describedby="id">
                     </div>
                     <div class="form-group col-md-5">
                       <label for="chassi">Número do Chassi:</label>
-                      <input type="text" class="form-control" id="chassi" aria-describedby="cpf">
+                      <input [(ngModel)]="chassi" type="text" class="form-control" id="chassi" aria-describedby="cpf">
                     </div>
                     <div class="form-group col-md-5">
                       <label for="placa">Número da Placa:</label>
-                      <input type="text" class="form-control" id="placa" aria-describedby="cpf">
+                      <input [(ngModel)]="placa" type="text" class="form-control" id="placa" aria-describedby="cpf">
                     </div>
                   </div>
                   <div class="row">
@@ -231,11 +237,12 @@
                   <div class="row">
                     <div class="form-group col-md-4">
                       <label for="ano-fab">Ano Fabricação:</label>
-                      <input type="date" class="form-control" id="ano-fab" aria-describedby="id">
+                      <input [(ngModel)]="ano-fab" type="date" class="form-control" id="ano-fab" aria-describedby="id">
                     </div>
                     <div class="form-group col-md-4">
                       <label for="ano-model">Ano Modelo:</label>
-                      <input type="date" class="form-control" id="ano-model" aria-describedby="cpf">
+                      <input [(ngModel)]="ano-model" type="date" class="form-control" id="ano-model"
+                        aria-describedby="cpf">
                     </div>
                     <div class="form-group col-md-4">
                       <label for="placa">Categoria:</label>
@@ -268,16 +275,18 @@
                     </div>
                     <div class="form-group col-md-3">
                       <label for="quil-inicial">Quilometragem Inicial:</label>
-                      <input type="text" class="form-control" id="quil-inicial" aria-describedby="id">
+                      <input [(ngModel)]="quil-inicial" type="text" class="form-control" id="quil-inicial"
+                        aria-describedby="id">
                     </div>
                     <div class="form-group col-md-3">
                       <label for="quil-final">Quilometragem Final:</label>
-                      <input type="text" class="form-control" id="quil-final" aria-describedby="cpf">
+                      <input [(ngModel)]="quil-final" type="text" class="form-control" id="quil-final"
+                        aria-describedby="cpf">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="obs">Observação:</label>
-                    <textarea class="form-control" id="obs"></textarea>
+                    <textarea [(ngModel)]="obs" class="form-control" id="obs"></textarea>
                   </div>
                   <button type="submit" class="btn btn-primary btn-salvar">Salvar Alteração</button>
                 </form>

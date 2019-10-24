@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-reserva',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./reserva.component.scss']
 })
 export class ReservaComponent implements OnInit {
-
+  reservaForm:FormGroup;
   constructor() { }
 
   ngOnInit() {

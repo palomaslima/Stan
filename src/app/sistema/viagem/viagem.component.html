@@ -27,22 +27,22 @@
                             <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
                                 <div class="tab-pane fade show active" id="nav-form" role="tabpanel"
                                     aria-labelledby="nav-home-tab">
-                                    <form id="form">
+                                    <form [formGroup]="viagemForm" id="form">
                                         <div class="row">
                                             <div class="form-group col-md-2">
                                                 <label for="id_viagem">Id:</label>
-                                                <input type="text" class="form-control" id="id_viagem"
+                                                <input [(ngModel)]= "id" type="text" class="form-control" id="id_viagem"
                                                     aria-describedby="id">
                                             </div>
                                             <div class="form-group col-md-5">
                                                 <label for="data-retirada">Data da retirada:</label>
-                                                <input type="date" class="form-control" id="data-retirada"
+                                                <input [(ngModel)]= "data-retirada" type="date" class="form-control" id="data-retirada"
                                                     aria-describedby="id">
                                             </div>
 
                                             <div class="form-group col-md-5">
                                                 <label for="data-entrega">Data da entrega:</label>
-                                                <input type="date" class="form-control" id="data-entrega"
+                                                <input [(ngModel)]= "data-entrega" type="date" class="form-control" id="data-entrega"
                                                     aria-describedby="id">
                                             </div>
 
@@ -51,7 +51,7 @@
 
                                         <div class="form-group">
                                             <label for="diametro">Motorista:</label>
-                                            <input type="text" class="form-control" id="largura" aria-describedby="id">
+                                            <input [(ngModel)]= "diametro" type="text" class="form-control" id="largura" aria-describedby="id">
                                         </div>
                                         <div class="form-group">
                                             <label for="ocupante">Ocupante:</label>
@@ -67,13 +67,13 @@
 
                                             <div class="form-group col-md-6">
                                                 <label for="origem">Origem:</label>
-                                                <input type="text" class="form-control" id="origem"
+                                                <input [(ngModel)]= "origem" type="text" class="form-control" id="origem"
                                                     aria-describedby="id">
                                             </div>
 
                                             <div class="form-group col-md-6">
                                                 <label for="destino">Destino:</label>
-                                                <input type="text" class="form-control" id="destino"
+                                                <input [(ngModel)]= "destino" type="text" class="form-control" id="destino"
                                                     aria-describedby="id">
                                             </div>
 

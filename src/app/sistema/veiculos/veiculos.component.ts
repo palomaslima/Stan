@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-veiculos',
@@ -6,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./veiculos.component.scss']
 })
 export class VeiculosComponent implements OnInit {
-
+  veiculosForm:FormGroup;
+  veiculosAlterarForm:FormGroup;
   constructor() { }
 
   ngOnInit() {
