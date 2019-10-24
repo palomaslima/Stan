@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-abastecimento',
@@ -7,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AbastecimentoComponent implements OnInit {
 
-  constructor() { }
+  abastecimentoForm:FormGroup;
+
+  constructor(private formGroup : FormGroup) { }
 
   ngOnInit() {
   }

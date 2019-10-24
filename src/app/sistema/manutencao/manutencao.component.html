@@ -28,7 +28,7 @@
                             <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
                                 <div class="tab-pane fade show active" id="nav-form" role="tabpanel"
                                     aria-labelledby="nav-home-tab">
-                                    <form id="form">
+                                    <form [formGroup]="manutencaoForm" id="form">
                                         <div class="row">
                                             <div class="form-group col-md-2">
                                                 <label for="id_manutenc">Código:</label>
@@ -67,18 +67,18 @@
                                             </div>
 
                                             <div class="form-group col-md-3">
-                                                <label for="motorista">Veículo:</label>
-                                                <input class="form-control" id="motorista">
+                                                <label for="veiculo">Veículo:</label>
+                                                <input [(ngModel)]= "veiculo" class="form-control" id="veiculo">
                                             </div>
 
                                             <div class="form-group col-md-3">
                                                 <label for="data-inicio">Data de início:</label>
-                                                <input class="form-control" type="date" id="data-inicio">
+                                                <input [(ngModel)]= "data-inicio" class="form-control" type="date" id="data-inicio">
                                             </div>
 
                                             <div class="form-group col-md-3">
                                                 <label for="data-final">Data final:</label>
-                                                <input class="form-control" type="date" id="data-final">
+                                                <input [(ngModel)]= "data-final" class="form-control" type="date" id="data-final">
                                             </div>
                                         </div>
 
@@ -86,7 +86,7 @@
                                         <div class="row">
                                             <div class="form-group col-md-4">
                                                 <label for="motorista">Motorista:</label>
-                                                <input class="form-control" id="motorista">
+                                                <input [(ngModel)]= "motorista" class="form-control" id="motorista">
                                             </div>
 
                                             <div class="form-group col-md-4">
@@ -112,7 +112,7 @@
 
                                         <div class="form-group">
                                             <label>Descrição</label>
-                                            <textarea class="form-control" id="descricao"></textarea>
+                                            <textarea [(ngModel)]= "descricao" class="form-control" id="descricao"></textarea>
                                         </div>
 
 

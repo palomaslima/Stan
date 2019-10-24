@@ -28,11 +28,11 @@
                             <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
                                 <div class="tab-pane fade show active" id="nav-form" role="tabpanel"
                                     aria-labelledby="nav-home-tab">
-                                    <form id="form">
+                                    <form [formGroup]="abastecimentoForm" id="form">
                                         <div class="row">
                                             <div class="form-group col-md-2">
                                                 <label for="id_abastecimento">ID:</label>
-                                                <input type="text" class="form-control" id="id_abastecimento" aria-describedby="id">
+                                                <input [(ngModel)]= "id_abastecimento" type="text" class="form-control" id="id_abastecimento" aria-describedby="id">
                                             </div>
                                             <div class="form-group col-md-5">
                                                 <label for="veiculo">Veículo:</label>
@@ -57,22 +57,22 @@
                                         <div class="row">
                                             <div class="form-group col-md-4">
                                                 <label for="valor-abast">Valor do abastecimento:</label>
-                                                <input type="text" class="form-control" id="valor-abast"
+                                                <input [(ngModel)]= "valor-abast" type="text" class="form-control" id="valor-abast"
                                                     aria-describedby="id">
                                             </div>
                                             <div class="form-group col-md-4">
                                                 <label for="valor-litro">Valor por litro:</label>
-                                                <input type="text" class="form-control" id="valor-litro"
+                                                <input [(ngModel)]= "valor-litro" type="text" class="form-control" id="valor-litro"
                                                     aria-describedby="cpf">
                                             </div>
                                             <div class="form-group col-md-2">
                                                 <label for="km-inicial">Km inicial:</label>
-                                                <input type="text" class="form-control" id="km-inicial"
+                                                <input [(ngModel)]= "km-inicial" type="text" class="form-control" id="km-inicial"
                                                     aria-describedby="km-inicial">
                                             </div>
                                             <div class="form-group col-md-2">
                                                 <label for="km-atual">Km atual:</label>
-                                                <input type="text" class="form-control" id="km-atual"
+                                                <input [(ngModel)]= "km-atual" type="text" class="form-control" id="km-atual"
                                                     aria-describedby="km-atual">
                                             </div>
 
@@ -80,17 +80,17 @@
                                         <div class="row">
                                             <div class="form-group col-md-4">
                                                 <label for="data-abst">Data de abastecimento:</label>
-                                                <input type="date" class="form-control" id="data-abst"
+                                                <input [(ngModel)]= "data-abst" type="date" class="form-control" id="data-abst"
                                                     aria-describedby="data-abst">
                                             </div>
                                             <div class="form-group col-md-4">
                                                 <label for="km-rodados">Km rodados:</label>
-                                                <input type="text" class="form-control" id="km-rodados"
+                                                <input [(ngModel)]= "km-rodados" type="text" class="form-control" id="km-rodados"
                                                     aria-describedby="km-rodados">
                                             </div>
                                             <div class="form-group col-md-4">
                                                 <label for="preco-km">Preço/ Km rodados:</label>
-                                                <input type="text" class="form-control" id="preco-km"
+                                                <input [(ngModel)]= "preco-km" type="text" class="form-control" id="preco-km"
                                                     aria-describedby="preco-km">
                                             </div>
 

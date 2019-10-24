@@ -34,45 +34,45 @@ Update: Atualizado dia 20/10/2019
               </nav>
               <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-form" role="tabpanel" aria-labelledby="nav-home-tab">
-                  <form id="form">
+                  <form [formGroup]="multasForm" id="form">
                     <div class="row">
                       <div class="form-group col-md-6">
                         <label for="id">ID:</label>
-                        <input type="text" class="form-control" id="id" aria-describedby="id">
+                        <input [(ngModel)]= "id" type="text" class="form-control" id="id" aria-describedby="id">
                       </div>
                       <div class="form-group col-md-6">
                         <label for="cod-multa">Código da Multa:</label>
-                        <input type="number" class="form-control" id="cod-multa" aria-describedby="id">
+                        <input [(ngModel)]= "cod-multa" type="number" class="form-control" id="cod-multa" aria-describedby="id">
                       </div>
                       <div class="form-group col-md-6">
                         <label for="data-infracao">Data da Infração:</label>
-                        <input type="date" class="form-control" id="data-infracao" aria-describedby="id">
+                        <input [(ngModel)]= "data-infracao" type="date" class="form-control" id="data-infracao" aria-describedby="id">
                       </div>
                       <div class="form-group col-md-6">
                         <label for="hora-infracao">Hora da Infração:</label>
-                        <input type="time" class="form-control" id="hora-infracao" aria-describedby="id">
+                        <input [(ngModel)]= "hora-infracao" type="time" class="form-control" id="hora-infracao" aria-describedby="id">
                       </div>
                       <div class="form-group col-md-6">
                         <label for="orgao-autuador:">Órgão Autuador:</label>
-                        <input type="text" class="form-control" id="orgao-autuador" aria-describedby="id">
+                        <input [(ngModel)]= "orgao-autuador" type="text" class="form-control" id="orgao-autuador" aria-describedby="id">
                       </div>
                       <div class="form-group col-md-6">
                         <label for="infrator">Infrator</label>
-                        <input type="text" class="form-control" id="infrator" aria-describedby="id">
+                        <input [(ngModel)]= "infrator" type="text" class="form-control" id="infrator" aria-describedby="id">
                       </div>
                       <div class="form-group col-md-6">
                         <label for="valor-multa">Valor da Multa</label>
-                        <input type="text" class="form-control" id="valor-multa" aria-describedby="id">
+                        <input [(ngModel)]= "valor-multa" type="text" class="form-control" id="valor-multa" aria-describedby="id">
                       </div>
                       <div class="form-group col-md-6">
                         <label for="gravidade">Grávidade</label>
-                        <input type="number" class="form-control" id="gravidade" aria-describedby="id">
+                        <input [(ngModel)]= "gravidade" type="number" class="form-control" id="gravidade" aria-describedby="id">
                       </div>
                     </div>
                     <div class="row">
                       <div class="form-group col-md-6">
                         <label for="descricao-multa">Descrição da Multa:</label>
-                        <textarea class="form-control" id="descricao-multa" aria-describedby="id"> </textarea>
+                        <textarea [(ngModel)]= "descricao-multa" class="form-control" id="descricao-multa" aria-describedby="id"> </textarea>
                       </div>
                     </div>
                     <hr>
@@ -83,7 +83,7 @@ Update: Atualizado dia 20/10/2019
                     <div class="row">
                       <div class="form-group col-md-6">
                         <label for="veiculo">Veículo:</label>
-                        <input type="text" class="form-control" id="veiculo" aria-describedby="id">
+                        <input [(ngModel)]= "veiculo" type="text" class="form-control" id="veiculo" aria-describedby="id">
                       </div>
                       <div class="form-group col-md-6">
                         <label for="marca">Marca:</label>

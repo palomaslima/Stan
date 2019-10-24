@@ -24,43 +24,43 @@
               </nav>
               <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-form" role="tabpanel" aria-labelledby="nav-home-tab">
-                  <form id="form">
+                  <form [formGroup]="motoristaForm" id="form">
                     <div class="row">
                       <div class="form-group col-md-3">
                         <label for="id">ID:</label>
-                        <input type="text" class="form-control" id="id" aria-describedby="id">
+                        <input [(ngModel)]= "id" type="text" class="form-control" id="id" aria-describedby="id">
                       </div>
                       <div class="form-group col-md-9">
                         <label for="cpf">CPF:</label>
-                        <input type="email" class="form-control" id="cpf" aria-describedby="cpf">
+                        <input [(ngModel)]= "cpf" type="email" class="form-control" id="cpf" aria-describedby="cpf">
                       </div>
                     </div>
                     <div class="form-group">
                       <label for="nome">Nome Completo</label>
-                      <input type="text" class="form-control" id="nome" aria-describedby="nome">
+                      <input [(ngModel)]= "nome" type="text" class="form-control" id="nome" aria-describedby="nome">
                     </div>
                     <div class="row">
                       <div class="form-group col-md-6">
                         <label for="telefone">Telefone:</label>
-                        <input type="tel" class="form-control" id="telefone" aria-describedby="id">
+                        <input [(ngModel)]= "telefone" type="tel" class="form-control" id="telefone" aria-describedby="id">
                       </div>
                       <div class="form-group col-md-6">
                         <label for="celular">Celular:</label>
-                        <input type="tel" class="form-control" id="celular" aria-describedby="cpf">
+                        <input [(ngModel)]= "celular" type="tel" class="form-control" id="celular" aria-describedby="cpf">
                       </div>
                     </div>
                     <div class="form-group">
                       <label for="endereco">Endereço:</label>
-                      <input type="text" class="form-control" id="endereco">
+                      <input [(ngModel)]= "endereco" type="text" class="form-control" id="endereco">
                     </div>
                     <div class="form-group">
                       <label for="email">Email</label>
-                      <input type="email" class="form-control" id="email">
+                      <input [(ngModel)]= "email" type="email" class="form-control" id="email">
                     </div>
                     <div class="row">
                       <div class="form-group col-md-5">
                         <label for="cnh">CNH:</label>
-                        <input type="text" class="form-control" id="cnh" aria-describedby="cnh">
+                        <input [(ngModel)]= "cnh" type="text" class="form-control" id="cnh" aria-describedby="cnh">
                       </div>
                       <div class="form-group col-md-7">
                         <div class="form-group form-check">
